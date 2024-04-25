@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
-import { Product } from '../../../models/product';
-import { ProductHistory } from '../../../models/productHistory';
+import { Product } from '../../models/product';
+import { ProductHistory } from '../../models/productHistory';
 
 @Component({
   selector: 'app-product-history',

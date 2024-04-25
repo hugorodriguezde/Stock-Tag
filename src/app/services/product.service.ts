@@ -1,9 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product } from '../../models/product';
+import { Product } from '../models/product';
 import { LoginService } from './login.service';
-import { ProductHistory } from '../../models/productHistory';
+import { ProductHistory } from '../models/productHistory';
 
 @Injectable({
   providedIn: 'root'

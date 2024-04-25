@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { catchError, tap } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
-import { Product } from '../../../models/product';
+import { Product } from '../../models/product';
 import { CurrencyPipe } from '@angular/common';
 import { LoginService } from '../../services/login.service';
 
