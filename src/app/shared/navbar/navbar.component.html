@@ -1,0 +1,85 @@
+<div class="wrapper">
+  <aside id="sidebar">
+      <div class="d-flex">
+          <button class="toggle-btn" type="button" (click)="toggleSidebar()">
+              <i class="lni lni-grid-alt"></i>
+          </button>
+          <div class="sidebar-logo">
+              <a href="#">StockTag</a>
+          </div>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+              data-bs-target="#auth3" aria-expanded="false" aria-controls="auth3">
+              <i class="lni lni-list"></i>
+              <span>Inventario</span>
+          </a>
+          <ul id="auth3" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Real time</a>
+              </li>
+              <li class="sidebar-item">
+                  <a routerLink="/history"class="sidebar-link">Historial</a>
+              </li>
+          </ul>
+      </li>
+          <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                  data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                  <i class="lni lni-protection"></i>
+                  <span>Proveedores</span>
+              </a>
+              <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                  <li class="sidebar-item">
+                      <a href="#" class="sidebar-link">Lista de proveedores</a>
+                  </li>
+                  <li class="sidebar-item">
+                      <a href="#" class="sidebar-link">Catalogo productos</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#auth2" aria-expanded="false" aria-controls="auth">
+                <i class="lni lni-layout"></i>
+                <span>Pedidos</span>
+            </a>
+            <ul id="auth2" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Pedidos en curso</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Pedidos pasados</a>
+                </li>
+            </ul>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="lni lni-user"></i>
+                <span>Perfil</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <i class="lni lni-support"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <i class="lni lni-cog"></i>
+                <span>Ajustes</span>
+              </a>
+            </li>
+      </ul>
+      <div (click)="logout()" class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+          </a>
+      </div>
+  </aside>
+  <div class="main p-3">
+
+  </div>
+</div>
